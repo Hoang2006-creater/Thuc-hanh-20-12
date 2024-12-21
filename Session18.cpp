@@ -52,15 +52,11 @@ int main() {
                 printf("Nhap ID: ");
                 scanf("%d", &new_dish.id);
                 getchar(); 
-
                 printf("Nhap ten mon an: ");
                 fgets(new_dish.name, 100, stdin);
-                new_dish.name[strcspn(new_dish.name, "\n")] = '\0'; 
-
                 printf("Nhap gia: ");
                 scanf("%lf", &new_dish.price);
                 getchar(); 
-
                 for (int i = size; i > pos; i--) {
                     menu[i] = menu[i - 1];
                 }
