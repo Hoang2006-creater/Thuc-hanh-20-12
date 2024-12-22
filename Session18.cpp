@@ -110,9 +110,7 @@ int main() {
                 char search_name[100];
                 printf("Nhap ten mon an can tim: ");
                 getchar(); 
-                fgets(search_name, 100, stdin);
-                search_name[strcspn(search_name, "\n")] = '\0'; 
-
+                fgets(search_name, 100, stdin); 
                 int found = 0;
                 for (int i = 0; i < size; i++) {
                     if (strcmp(menu[i].name, search_name) == 0) {
